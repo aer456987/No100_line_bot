@@ -53,24 +53,6 @@ def handle_message(event):
             sticker_message)
         return
 
-    if '擔心' in msg:
-        bot_mes = '不要擔心，事情會有好轉的。'
-        line_bot_api.reply_message(
-            event.reply_token,
-            TextSendMessage(text=bot_mes))
-
-        sticker_message = StickerSendMessage(
-            package_id='3',  # STKPKGID
-            sticker_id='248'   # STKID
-        )
-
-        line_bot_api.reply_message(
-            event.reply_token,
-            sticker_message)
-        return
-
-
-
     if msg in ['你是誰', '妳是誰', '是隨', '你4隨', '尼4隨', 'ni是誰', 'ni4隨', 'NI4隨'] :
         bot_mes = Self_intr
     elif  '你好' in msg:
