@@ -44,8 +44,8 @@ def handle_message(event):
 
     if '貼圖' in msg:
         sticker_message = StickerSendMessage(
-            package_id='180',
-            sticker_id='3'
+            package_id='1',
+            sticker_id='1'
         )
 
         line_bot_api.reply_message(
