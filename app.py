@@ -40,11 +40,11 @@ def handle_message(event):
     msg = event.message.text
     bot_mes = '抱歉，我不太了解你的意思。'
 
-    if ['你是誰', '妳是誰', '是隨', '4隨'] in msg:
-        bot_mes = '您好(smile)！\n', 
-        '我叫亞伯‧派拉德，住在艾殷柯吉諾，隸屬於暴風神殿，目前是雨軍團的祭司長。\n',
+    if msg in ['你是誰', '妳是誰', '是隨', '4隨', 'who are you'] :
+        bot_mes = '您好！\n我叫亞伯‧派拉德，住在艾殷柯吉諾，', 
+        '隸屬於暴風神殿，目前是雨軍團的祭司長。\n',
         '這是我的名片：https://www.plurk.com/p/i90nk9\n請多指教！'
-    elif ['吃飯', '吃', '食物'] in msg:
+    elif msg in ['吃飯', '吃', '食物']:
         bot_mes = '嗯？\n我吃藥就好了，謝謝你。'
 
 
