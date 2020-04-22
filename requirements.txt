@@ -1,7 +1,2 @@
-<<<<<<< HEAD:Requirements.txt
 line-bot-sdk==1.16.0
 gunicorn
-=======
-line-bot-sdk
-gunicorn
->>>>>>> b15bc18bb477c1e1e75d940bfd21479e6299d39d:requirements.txt
