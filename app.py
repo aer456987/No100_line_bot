@@ -39,15 +39,15 @@ def callback():
 def handle_message(event):
     msg = event.message.text
     bot_mes = '抱歉，我不太了解你的意思。'
-    Self intr = '您好！\n我叫亞伯‧派拉德，住在艾殷柯吉諾,目前隸屬於暴風神殿，是雨軍團的祭司長。\n這是我的名片：https://www.plurk.com/p/i90nk9\n請多指教！'
+    Self_intr = '您好！\n我叫亞伯‧派拉德，住在艾殷柯吉諾,目前隸屬於暴風神殿，是雨軍團的祭司長。\n這是我的名片：https://www.plurk.com/p/i90nk9\n請多指教！'
     # 自我介紹
 
     if msg in ['你是誰', '妳是誰', '是隨', '你4隨', '尼4隨', 'ni4隨', 'NI4隨'] :
-        bot_mes = Self intr
+        bot_mes = Self_intr
     elif '介紹你' in msg:
-        bot_mes = Self intr
+        bot_mes = Self_intr
     elif '多了解你' in msg:
-        bot_mes = Self intr
+        bot_mes = Self_intr
     
     if '食物' in msg:
         bot_mes = '我沒有特別喜歡的食物。'
