@@ -37,17 +37,16 @@ def callback():
 
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
-    user_name = input('你好，初次見面，請告送我你的名字：')
     msg = event.message.text
     bot_mes = '抱歉，我不太了解你的意思。'
 
-    if msg in ['你是誰', '妳是誰', '是隨', '4是隨']:
+    if msg in ['你是誰', '妳是誰', '是隨', '4隨']:
         bot_mes = '{Nickname}，您好(smile)！\n', 
                   '我叫{AccountName}，隸屬艾殷柯吉諾，目前是雨軍團祭司長。\n',
                   '這是我的名片：https://www.plurk.com/p/i90nk9\n請多指教！(happy)'
     elif msg in ['吃飯', '吃', '食物']:
         bot_mes = '嗯？\n我吃藥就好了，謝謝你。'
-        
+
 
     line_bot_api.reply_message(
         event.reply_token,
